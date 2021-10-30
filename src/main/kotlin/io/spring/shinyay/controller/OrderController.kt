@@ -11,11 +11,11 @@ import java.util.concurrent.ConcurrentHashMap
 
 @Controller
 @ResponseBody
-class OrderController {
+class OrderController() {
 
     private val orderDataStore: MutableMap<Int, Collection<Order>> = ConcurrentHashMap()
 
-    constructor() {
+    init {
         for (customerId in 1..8) {
             val listOfOrders = ArrayList<Order>()
             val max = (Math.random() * 100).toInt()
