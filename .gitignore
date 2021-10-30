@@ -1,3 +1,5 @@
+rsc*.jar
+
 HELP.md
 .gradle
 build/
