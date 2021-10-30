@@ -14,6 +14,11 @@ Overview
 ## Requirement
 
 ## Usage
+- [RSocket Client CLI ](https://github.com/making/rsc)
+
+```shell
+$ java -jar ./rsc.jar tcp://localhost:8181 -r orders.2 --stream
+```
 
 ## Installation
 
